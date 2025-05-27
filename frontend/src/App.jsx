@@ -1,12 +1,15 @@
-import React from 'react'
-import Navbar from './components/Navbar'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";  
+
 
 const App = () => {
   return (
-    <div class="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
+    <>
+    <Navbar />
+      <Home />
+    </>
+  );
+};
 
-    </div>
-  )
-}
-
-export default App
+export default App;
