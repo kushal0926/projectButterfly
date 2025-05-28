@@ -5,8 +5,7 @@ import Navbar from '../components/Navbar'
 const About = () => {
   return (
     <div>
-      <Navbar />
-      <h1 class="text-9xl text-center">About</h1>
+      <h1 class="text-9xl text-center my-[20vh]">About</h1>
       </div>
   )
 }

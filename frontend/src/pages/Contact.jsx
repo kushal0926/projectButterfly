@@ -4,8 +4,7 @@ import Navbar from '../components/Navbar'
 const Contact = () => {
   return (
     <>
-    <Navbar />
-    <h1 className="text-9xl text-center">Contact</h1>
+    <h1 className=" my-[20vh] text-9xl text-center">Contact</h1>
     </>
   )
 }
