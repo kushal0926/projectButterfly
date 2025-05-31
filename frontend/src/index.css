@@ -1,14 +1,26 @@
 @import "tailwindcss";
 
 * {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 
 /* navLink  */
-a:hover {
-    color: blue;
-}
 a.active {
-    color: red;
+  color: #ee78d0;
+  text-decoration: underline;  
 }
+
+/* 'red-violet': {
+    '50': '#fdf2fa',
+    '100': '#fbe8f7',
+    '200': '#f9d1f1',
+    '300': '#f5ace4',
+    '400': '#ee78d0',
+    '500': '#e54fba',
+    '600': '#d32f9c',
+    '700': '#c5228a',
+    '800': '#971d69',
+    '900': '#7e1d5a',
+    '950': '#4d0a34',
+}, */
+

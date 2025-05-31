@@ -13,6 +13,10 @@ import Login from "./pages/Login.jsx";
 import Order from "./pages/Order.jsx";
 import PlaceOrder from "./pages/PlaceOrder.jsx";
 import Product from "./pages/Product.jsx";
+import { ShopContext } from "./context/ShopContext.jsx";
+import ShopContextProvider from "./context/ShopContextProvider.jsx";
+
+
 
 const router = createBrowserRouter([
   {
@@ -34,6 +38,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ShopContextProvider>
+      <RouterProvider router={router} />
+      <ShopContext />
+    </ShopContextProvider>
   </StrictMode>
 );
