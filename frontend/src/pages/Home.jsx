@@ -1,14 +1,18 @@
 import React from "react";
 import Hero from "../components/Hero";
-// import Slider from "../components/Slider"; not finalized
 import LatestCollection from "../components/LatestCollection";
+import BestSeller from "../components/BestSeller";
+import OurPolicy from "../components/OurPolicy";
+import Footer from "../components/Footer";
 
 const home = () => {
   return (
     <>
       <Hero />
       <LatestCollection />
-      {/* <Slider />  still woriking not finalized*/}
+      <BestSeller />
+      <OurPolicy />
+      <Footer />
     </>
   );
 };

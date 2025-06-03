@@ -6,10 +6,11 @@ const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <nav class="flex items-center justify-between py-5 font-medium border-b border-gray-200">
-      <img src={assets.logo} class="w-36" alt="store_logo" />
-      {/* <h1 className="text-2xl font-">ButterFly.</h1> */}
-      <ul class="hidden sm:flex gap-5 text-md text-gray-700 ">
+    <nav class="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
+      <Link to={"/"}>
+        <img src={assets.logo} class="w-36" alt="store_logo" />
+      </Link>
+         <ul class="hidden sm:flex gap-5 text-md text-gray-700 font-bold font-m ">
         <NavLink class="flex flex-col items-center gap-1" to="/">
           <li>Home</li>
         </NavLink>

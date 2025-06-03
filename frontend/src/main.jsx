@@ -23,11 +23,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      { path: "/", element: <Home /> },
       { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
       { path: "/cart", element: <Cart /> },
       { path: "/collection", element: <Collection /> },
-      { path: "/", element: <Home /> },
       { path: "/login", element: <Login /> },
       { path: "/order", element: <Order /> },
       { path: "/place-order", element: <PlaceOrder /> },
@@ -40,7 +40,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ShopContextProvider>
       <RouterProvider router={router} />
-      <ShopContext />
+      {/* <ShopContext /> */}
     </ShopContextProvider>
   </StrictMode>
 );
