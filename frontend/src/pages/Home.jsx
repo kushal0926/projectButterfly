@@ -12,7 +12,6 @@ const home = () => {
       <LatestCollection />
       <BestSeller />
       <OurPolicy />
-      <Footer />
     </>
   );
 };

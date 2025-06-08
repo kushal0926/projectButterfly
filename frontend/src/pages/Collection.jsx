@@ -79,35 +79,95 @@ const Collection = () => {
         >
           <p className="mb-3 text-sm font-medium">Categories</p>
           <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
-            {/* men categories */}
+            {/* bags categories */}
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Men"}
+                value={"Bags"}
                 onChange={toggleCategory}
               />
-              Men
+              Bags
             </p>
-            {/* men categories */}
+            {/* bra categories */}
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Kids"}
+                value={"Bra"}
                 onChange={toggleCategory}
               />
-              Kids
+              Bra
             </p>
-            {/* women categories */}
+            {/* panties categories */}
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Women"}
+                value={"Panties"}
                 onChange={toggleCategory}
               />
-              Women
+              Panties
+            </p>
+            {/* nightwear categories */}
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={"Nightwear"}
+                onChange={toggleCategory}
+              />
+              Nightwear
+            </p>
+            {/* pajama categories  */}
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={"Pajama Set"}
+                onChange={toggleCategory}
+              />
+              Pajama Set
+            </p>
+            {/* scarf categories */}
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={"Scarf"}
+                onChange={toggleCategory}
+              />
+              Scarf
+            </p>
+            {/* Socks categories */}
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={"Socks"}
+                onChange={toggleCategory}
+              />
+              Socks
+            </p>
+            {/* theral  sets collection */}
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={"Thermal Sets"}
+                onChange={toggleCategory}
+              />
+              Thermal Sets
+            </p>
+            {/* other categories */}
+            <p className="flex gap-2">
+              <input
+                className="w-3"
+                type="checkbox"
+                value={"Others"}
+                onChange={toggleCategory}
+              />
+              Others
             </p>
           </div>
         </div>

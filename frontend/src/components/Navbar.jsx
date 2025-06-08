@@ -1,16 +1,18 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { assets } from "../assets/assets";
+import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
+  const {setShowSearch} = useContext(ShopContext);
 
   return (
-    <nav class="flex items-center justify-between px-6 md:px-16 lg:px-32 py-3 border-b border-gray-300 text-gray-700">
+    <nav class="flex items-center justify-between px-6 md:px-16 lg:px-10  border-b border-gray-300 text-gray-700">
       <Link to={"/"}>
         <img src={assets.logo} class="w-36" alt="store_logo" />
       </Link>
-         <ul class="hidden sm:flex gap-5 text-md text-gray-700 font-bold font-m ">
+         <ul class="hidden sm:flex gap-5 text-md text-gray-700 font-medium font-m ">
         <NavLink class="flex flex-col items-center gap-1" to="/">
           <li>Home</li>
         </NavLink>
@@ -31,6 +33,7 @@ const Navbar = () => {
           src={assets.search_icon}
           alt="search_icon"
           className="w-5 cursor-pointer"
+          onClick={()=> setShowSearch(true)}
         />
         {/* profile-icon */}
         <div className="group relative">
